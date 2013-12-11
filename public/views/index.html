@@ -1,3 +1,8 @@
-<section data-ng-controller="IndexController">
-	<h1>This is the home view</h1>
-</section>
+<div class="content row" ng-controller="IndexController">
+	<div class="span4 well container-fluid" id="options">
+		<pre>Model: {{selectedspecies| json}}</pre>
+		<div>Species : <input type="text" ng-model="selectedspecies" typeahead="species for species in species | filter:$viewValue | limitTo:10"></div>
+		<div>Breed : <input type="text" ng-model="selectedbreed" typeahead="breed for breed in breeds | filter:$viewValue | limitTo:10"></div>
+	</div>
+	<div id="map_canvas"/>
+</div>

@@ -1,3 +1,6 @@
+body, html {
+	height:100%
+}
 .navbar .nav>li>a.brand {
     padding-left:20px;
     margin-left:0
@@ -5,6 +8,7 @@
 
 .content {
     margin-top:50px;
+	height:100%;
     width:100%
 }
 
@@ -22,4 +26,13 @@ footer {
 
 footer p {
     padding:5px 0 12px 10px
+}
+
+#map_canvas {
+	height:100%
+}
+
+#options {
+	margin-left:40px;
+	margin-right:20px
 }
